@@ -1,9 +1,11 @@
-kosssi.apt
-==========
+ansible role apt
+================
 
-Ansible role for execute apt-get update and install apt-repositories and apt-packages.
-Based on kosssi's work : https://github.com/kosssi/ansible-role-apt
-
+Ansible role for managing playbooks apt part like :
+ - update / upgrade
+ - install/uninstall packages
+ - add/remove repositories
+ - add debconf infos
 
 Role Defaults Variables
 -----------------------
@@ -41,3 +43,4 @@ License
 -------
 
 Licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
