@@ -27,3 +27,12 @@ apt_remove: false
 # apt_remove:
 #   - python-apt
 #   - unattended-upgrades
+
+apt_debconf_name: false
+#
+# apt_debconf_name: "oracle-java8-installer"
+# apt_debconf_question: "shared/accepted-oracle-license-v1-1"
+# apt_debconf_value: "true"
+# apt_debconf_vtype: "select"
+#
+

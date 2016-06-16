@@ -1,9 +1,9 @@
 kosssi.apt
 ==========
 
-[![Build Status](https://travis-ci.org/kosssi/ansible-role-apt.svg?branch=master)](https://travis-ci.org/kosssi/ansible-role-apt)
-
 Ansible role for execute apt-get update and install apt-repositories and apt-packages.
+Based on kosssi's work : https://github.com/kosssi/ansible-role-apt
+
 
 Role Defaults Variables
 -----------------------
@@ -18,6 +18,15 @@ See [defaults/main.yml](defaults/main.yml) for more information.
       - unattended-upgrades
     apt_install_repositories: false
     apt_remove_repositories: false
+    apt_debconf_name: false
+
+using Debconf :
+-----------------------
+
+    apt_debconf_name: "oracle-java8-installer"
+    apt_debconf_question: "shared/accepted-oracle-license-v1-1"
+    apt_debconf_value: "true"
+    apt_debconf_vtype: "select"
 
 Example Playbook
 ----------------
@@ -26,7 +35,7 @@ Example Playbook
       vars:
           apt_install: [cowsay, cowthink, sl, figlet]
       roles:
-        - { role: kosssi.apt, tags: apt }
+        - { role: package_apt, tags: apt }
 
 License
 -------

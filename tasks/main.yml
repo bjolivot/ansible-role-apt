@@ -1,8 +1,9 @@
 ---
-
+- include: debconf.yml
 - include: update.yml
 - include: dependencies.yml
 - include: repositories.yml
 - include: upgrade.yml
 - include: install.yml
 - include: remove.yml
+

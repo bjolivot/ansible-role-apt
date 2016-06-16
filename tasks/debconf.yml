@@ -1,0 +1,4 @@
+---
+- name: debconf
+  when: apt_debconf_name
+  debconf: name="{{ apt_debconf_name }}" question="{{ apt_debconf_question }}" value="{{ apt_debconf_value }}" vtype="{{ apt_debconf_vtype }}"
