@@ -1,0 +1,38 @@
+# ---
+
+# apt_cache_valid_time: 3600
+# apt_update: true
+
+# apt_upgrade: true
+# apt_upgrade_type: safe          # safe, full or dist
+
+# apt_dependencies:
+#   - python-apt
+#   - aptitude
+
+# apt_install: false
+# # apt_install:
+# #   - python-apt
+# #   - unattended-upgrades
+
+# apt_install_repositories: false
+# # apt_install_repositories:
+# #   - ppa:ondrej/php5
+
+# apt_remove_repositories: false
+# # apt_remove_repositories:
+# #   - ppa:ondrej/php5
+
+# apt_remove: false
+# # apt_remove:
+# #   - python-apt
+# #   - unattended-upgrades
+
+# apt_debconf_name: false
+# #
+# # apt_debconf_name: "oracle-java8-installer"
+# # apt_debconf_question: "shared/accepted-oracle-license-v1-1"
+# # apt_debconf_value: "true"
+# # apt_debconf_vtype: "select"
+# #
+
